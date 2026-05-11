@@ -7,7 +7,7 @@ Aplicação de linha de comando em Java com persistência de dados em MySQL.
 - Adicionar ganhos e despesas por categoria
 - Relatório com total de ganhos, despesas e balanço
 - Editar e apagar entradas
-- Dados salvos no banco — nada se perde ao fechar o programa
+- Dados salvos no banco
 
 ## Tecnologias
 
@@ -61,7 +61,7 @@ db.usuario=seu_usuario
 db.senha=sua_senha
 ```
 
-> O arquivo `config.properties` não é versionado — cada um usa suas próprias credenciais.
+> O arquivo `config.properties` não é versionado, cada um usa suas próprias credenciais.
 
 ### 3. Rodar
 
