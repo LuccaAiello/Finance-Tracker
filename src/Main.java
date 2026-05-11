@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //declara a lista que guarda as infos
+        //declara a lista que guarda as informações
         EntryManager manager = new EntryManager();
         EntryDAO dao = new EntryDAO();
         ArrayList<Entry> entries = dao.buscarTodos();
@@ -21,7 +21,7 @@ public class Main {
                 break;
             }
             if (comando.equals("adicionar ganho")) {
-                //pede infos e salva como variavel para criar o objeto entry
+                //pede informações e salva como variavel para criar o objeto entry
                 System.out.println("Valor:");
                 int valor = Integer.valueOf(scanner.nextLine());
 
@@ -48,12 +48,6 @@ public class Main {
 
 
             if (comando.equals("relatorio")) {
-                //printa dispesas totais - DONE
-                //printa gastos por categoria - DONE
-                //printa quanto tem disponivel até atingir o limite - DONE
-
-                //printa boletos fixos com a data, valor e se foi pago ou não.
-
                 manager.criaCategorias();
                 System.out.println("// Ganhos totais: R$" + manager.totalGanhos());
                 manager.printaGanhos();
@@ -66,7 +60,7 @@ public class Main {
             }
 
             if (comando.equals("editar")) {
-                //edita o entri escolhido pelo id
+                //edita o entry escolhido pelo id
                 System.out.println("Digite o id que quer editar:");
                 for (Entry e : manager.getListaEntries()) {
                     System.out.println("id:" + e.getId() + " | " + e.getValor() + " | " + e.getFonte() + " | " + e.isdOL());
